@@ -2,13 +2,13 @@ package com.argo.user_commons.User.Roles.infrascturure.api;
 
 import com.argo.user_commons.User.Roles.application.dto.roldto;
 import com.argo.user_commons.User.Roles.application.rolesService;
+import com.argo.user_commons.User.Roles.domain.IRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/roles")
@@ -36,4 +36,12 @@ public class rolesController {
 
     }
 
+    @RequestMapping("/prueba")
+    public List roles(){
+
+        return this.iRoles.findAll();
+    }
+
+    @Autowired
+    private IRoles iRoles;
 }
