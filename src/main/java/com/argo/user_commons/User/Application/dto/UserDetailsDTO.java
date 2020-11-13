@@ -61,4 +61,14 @@ public class UserDetailsDTO {
     }
 
 
+    @Override
+    public String toString() {
+        return "UserDetailsDTO{" +
+                "idUser=" + idUser +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", cell='" + cell + '\'' +
+                '}';
+    }
 }

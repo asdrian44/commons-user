@@ -63,4 +63,16 @@ public class UserDTO {
     public void setUserDetails(UserDetailsDTO userDetails) {
         this.userDetails = userDetails;
     }
+
+    @Override
+    public String toString() {
+        return "UserDTO{" +
+                "idUser=" + idUser +
+                ", userDetailsDTO=" + userDetailsDTO +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", userDetails=" + userDetails +
+                ", roles=" + roles +
+                '}';
+    }
 }
