@@ -38,7 +38,7 @@ public class rolesController {
 
     @RequestMapping("/prueba")
     public List roles(){
-
+        System.out.println("dada");
         return this.iRoles.findAll();
     }
 
