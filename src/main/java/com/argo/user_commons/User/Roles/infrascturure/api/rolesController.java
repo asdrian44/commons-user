@@ -37,9 +37,9 @@ public class rolesController {
     }
 
     @RequestMapping("/prueba")
-    public List roles(){
-        System.out.println("dada");
-        return this.iRoles.findAll();
+    public String roles(){
+        this.iRoles.findAll().forEach(System.out::println);
+        return "si me conecte";
     }
 
     @Autowired

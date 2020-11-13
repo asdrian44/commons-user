@@ -8,7 +8,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableEurekaClient
 @EnableFeignClients
-@EnableCircuitBreaker
 @SpringBootApplication
 public class UserCommonsApplication {
 
