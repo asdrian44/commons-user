@@ -38,7 +38,7 @@ public class rolesController {
 
     @RequestMapping("/prueba")
     public String roles(){
-        this.iRoles.findAll().forEach(System.out::println);
+        //this.iRoles.findAll().forEach(System.out::println);
         return "si me conecte";
     }
 
